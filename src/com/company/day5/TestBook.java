@@ -6,6 +6,8 @@ public class TestBook {
         Book book = new Book("Karyakner", author, 47);
         book.printAllInfo();
         book.printAuthorNameAndEmail();
+        Book newBook = new Book("Katsin Akhper", author, 23);
+        newBook.printAllInfo();
 
     }
 }

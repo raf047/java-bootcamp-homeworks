@@ -7,9 +7,9 @@ public class Employee {
     String name;
     String department;
     int age;
-    String gender;
+    char gender;
 
-    public Employee(int id, String name, String department, int age, String gender) {
+    public Employee(int id, String name, String department, int age, char gender) {
         this.id = id;
         this.name = name;
         this.department = department;
@@ -21,6 +21,6 @@ public class Employee {
      * print Employee information
      */
     public void printInfo() {
-        System.out.println("#" + id + ", Name: " + this.name + ", Department: "+ this.department + ", Age: " + this.age + ", Gender: " + this.gender);
+        System.out.println("#" + id + ", Name: " + this.name + ", Department: "+ this.department + ", Age: " + this.age + ", Gender: " + (this.gender == 'f' ? "Female" : "Male"));
     }
 }
