@@ -104,7 +104,8 @@ public class Homework0210 {
      * @param num3
      * @return
      */
-    public static int greatestNumber(int num1, int num2, int num3) {
+    public static int greatestNumber(int num1, int num2, int num3)
+    {
         int max = num1;
         if (num2 > max) {
             max = num2;

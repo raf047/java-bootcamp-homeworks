@@ -7,6 +7,13 @@ import java.util.Scanner;
 public class Homework0211 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        int y;
+        do {
+              y = 1;
+             System.out.print(y++ + " ");
+             } while(y <= 10);
+
+
 
 //        int num = 0;
 //        System.out.println(((num & (num - 1)) == 0 && num != 0) ? true : false);
@@ -32,7 +39,7 @@ public class Homework0211 {
 
 //        System.out.println(determineTheGrade(10, 40, 47));
 
-        calculator(scanner);
+//        calculator(scanner);
         scanner.close();
 
     }
@@ -225,6 +232,7 @@ public class Homework0211 {
 
     /**
      * calculator +, -, *, /
+     *
      * @param scanner
      */
     public static void calculator(Scanner scanner) {
