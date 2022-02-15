@@ -32,12 +32,12 @@ public class Homework0215 {
 
 //        printCheckerboard(7);
 
-//        printMultiplicationTable(10);
+        printMultiplicationTable(10);
 
-        printPatternA(4);
-        printPatternB(4);
-        printPatternC(4);
-        printPatternD(4);
+//        printPatternA(4);
+//        printPatternB(4);
+//        printPatternC(4);
+//        printPatternD(4);
 
     }
 
@@ -291,17 +291,21 @@ public class Homework0215 {
      * @param n
      */
     public static void printMultiplicationTable(int n){
-        for (int i = 0; i <= n; i++) {
-            for (int j = 0; j <= n; j++) {
+        for (int i = -1; i <= n; i++) {
+            for (int j = -1; j <= n; j++) {
                 if (i == -1 && j == -1){
                     System.out.print("   * | ");
-                }else if (i == -1){
+                }else if(i == 0 && j == 0){
+                    System.out.print("------------------------------------------------");
+                } else if (i == -1){
                     System.out.printf("%4d", j);
-                }else if (j == -1){
+                }else if (j == -1 && i != 0){
                     System.out.printf("%4d", i);
                     System.out.print(" | ");
-                }else {
+                }else if(j != -1 && i != 0) {
                     System.out.printf("%4d", i * j);
+                }else{
+                    System.out.print("   ");
                 }
             }
             System.out.println();
