@@ -20,6 +20,7 @@ public class Homework0215 {
 //        printAllNaturalDivisors(32);
 //        System.out.println(naturalDivisorsCount(47));
 
+//        GNCHE1(4);
 
 //        System.out.println(sumOf10Numbers(scanner));
 
@@ -28,6 +29,7 @@ public class Homework0215 {
 
 //        GNCHE1(7);
 
+//        printCheckerboard(7);
 //        printNSizeSquare(4);
 
 //        printCheckerboard(7);
@@ -205,8 +207,7 @@ public class Homework0215 {
      */
     public static int convertBinaryToDecimal(int num){
         int sum = 0;
-        int i;
-        for (i = 0; num != 0; num /= 10, i++) {
+        for (int i = 0; num != 0; num /= 10, i++) {
             sum += (num % 10) * Math.pow(2,i);
         }
         return sum;
@@ -243,12 +244,12 @@ public class Homework0215 {
      */
     public static void GNCHE1(int n){
         int count = 0;
-        OUTER_LOOP:for (int i = 1; i <= n; i++) {
+        for (int i = 1; i < n; i++) {
             for (int j = 1; j <= i; j++) {
                 System.out.print(i);
                 count++;
                 if (count == n){
-                    break OUTER_LOOP;
+                    return;
                 }
             }
         }
