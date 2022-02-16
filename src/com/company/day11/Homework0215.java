@@ -296,16 +296,14 @@ public class Homework0215 {
                 if (i == -1 && j == -1){
                     System.out.print("   * | ");
                 }else if(i == 0 && j == 0){
-                    System.out.print("-------------------------------------------------");
-                } else if (i == -1){
+                    System.out.print("  ---------------------------------------------");
+                } else if (i == -1 && j != 0){
                     System.out.printf("%4d", j);
                 }else if (j == -1 && i != 0){
                     System.out.printf("%4d", i);
                     System.out.print(" | ");
-                }else if(j != -1 && i != 0) {
+                }else if(j != -1 && i != 0 && j != 0) {
                     System.out.printf("%4d", i * j);
-                }else{
-                    System.out.print("  ");
                 }
             }
             System.out.println();
