@@ -142,17 +142,13 @@ public class Homework0215 {
      */
     public static void printSmallestNaturalDivisor(int x){
         int sqrt = (int)Math.sqrt(x);
-        boolean find = false;
         for (int i = 2; i <= sqrt; i++) {
             if (x % i == 0) {
-                find = true;
                 System.out.println(i);
-                break;
+                return;
             }
         }
-        if (!find){
-            System.out.println("Prime number");
-        }
+        System.out.println("Prime number");
     }
 
     /**
@@ -221,7 +217,6 @@ public class Homework0215 {
     public static void printCounts(Scanner scanner){
         System.out.println("Enter N: ");
         int n = scanner.nextInt();
-        int count0 = 0;
         int countPositive = 0;
         int countNegative = 0;
         for (int i = 0; i < n; i++) {
@@ -231,11 +226,9 @@ public class Homework0215 {
                 countPositive++;
             }else if (num < 0){
                 countNegative++;
-            }else {
-                count0++;
             }
         }
-        System.out.println("0 - " + count0 + ", positive - " + countPositive + ", negative - " + countNegative);
+        System.out.println("0 - " + (n - countNegative - countPositive) + ", positive - " + countPositive + ", negative - " + countNegative);
     }
 
     /**

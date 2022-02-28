@@ -6,7 +6,7 @@ public class Homework0216 {
     public static void main(String[] args) {
 
 //        printEvenIndices(5);
-        int[] arr = {47, 7, 47, 6, -5,147, -47, -49, -6, 6};
+        int[] arr = {-47, 7, 47, 6, -5,147, -47, -49, -6, 6};
 //        printSmallestPositiveItem(arr);
 //        printPositiveElements(arr);
 //        printLargerThanPrevious(arr);
@@ -140,15 +140,13 @@ public class Homework0216 {
      */
     public static void printLargestItemAndIndex(int[] arr) {
         int length = arr.length;
-        int max = arr[0];
         int firstIndex = 0;
         for (int i = 1; i < length; i++) {
-            if (max < arr[i]) {
-                max = arr[i];
+            if (arr[i] > arr[firstIndex]) {
                 firstIndex = i;
             }
         }
-        System.out.println("The largest is: " + max + " , index is " + firstIndex);
+        System.out.println("The largest is: " + arr[firstIndex] + " , index is " + firstIndex);
     }
 
     /**
@@ -174,14 +172,16 @@ public class Homework0216 {
     public static void printDifferentElements(int[] arr) {
         int length = arr.length;
         int temp = arr[0];
+        int count = 0;
         for (int i = 1; i < length; i++) {
             if (temp == arr[i]) {
                 continue;
             }
-            System.out.println(temp);
+            count++;
             temp = arr[i];
         }
-        System.out.println(arr[length - 1]);
+        System.out.println(count);
+
     }
 
     /**

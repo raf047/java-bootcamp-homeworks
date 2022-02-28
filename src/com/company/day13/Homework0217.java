@@ -11,14 +11,20 @@ public class Homework0217 {
 //        printMatrix(matrix, 4, 7);
 
 //        int[][] matrix = {{1, 4, 7, 0}, {3, 4, 7, 0}, {1,1,1,1}, {1,4,6,0}};
-//        int[][] matrix1 = generateRandomMatrix(5,5);
-//        int[][] matrix2 = generateRandomMatrix(5,5);
-//                printMatrix(matrix1, 5, 5);
+        int[][] matrix1 = generateRandomMatrix(5,5);
+        int[][] matrix2 = generateRandomMatrix(5,5);
+                printMatrix(matrix1, 5, 5);
+        System.out.println();
+
 //        System.out.println();
-        int[][] matrix = generateSpiralWith1(7);
-                printMatrix(matrix,7,7);
+//        int[][] matrix = generateSpiralWith1(7);
+                printMatrix(matrix2,5,5);
+        System.out.println();
+
 //
-//        int[][] matrix = addTwoMatrices(matrix1,matrix2,5);
+        int[][] matrix = addTwoMatrices(matrix1,matrix2,5);
+
+        printMatrix(matrix,5,5);
 //        System.out.println();
 //        printMatrix(matrix,5,10);
 //        printMaxSumOfRows(matrix, 4, 4);
