@@ -14,11 +14,14 @@ public class PersonValidator {
     }
 
     public static boolean isValidGender(String str){
-        return str != null && str.compareToIgnoreCase("male") == 0 || str.compareToIgnoreCase("female") == 0;
+        return str != null && (str.compareToIgnoreCase("male") == 0 || str.compareToIgnoreCase("female") == 0);
     }
 
     public static boolean isValidPassportId(String str){
-        if (str != null && str.length() != 8){
+        if (str == null){
+            return false;
+        }
+        if (str.length() != 8){
             return false;
         }
 

@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7613264f-7f4a-40f0-88bf-4d59fa3d9404" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-bootcamp-homeworks/com/company/day11/Homework0215.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-bootcamp-homeworks/com/company/day11/Homework0215.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-bootcamp-homeworks/com/company/day12/Homework0216.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-bootcamp-homeworks/com/company/day12/Homework0216.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-bootcamp-homeworks/com/company/day13/Homework0217.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-bootcamp-homeworks/com/company/day13/Homework0217.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/day11/Homework0215.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/day11/Homework0215.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/day12/Homework0216.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/day12/Homework0216.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/day13/Homework0217.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/day13/Homework0217.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/day18/PersonValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/day18/PersonValidator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
