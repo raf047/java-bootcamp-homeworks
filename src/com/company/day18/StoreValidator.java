@@ -13,7 +13,10 @@ public class StoreValidator {
     }
 
     public static boolean isValidPhoneNumber(String phoneNumber){
-        if (phoneNumber != null && phoneNumber.length() != 8){
+        if (phoneNumber == null){
+            return false;
+        }
+        if (phoneNumber.length() != 8){
             return false;
         }
         for (int i = 0; i < 8; i++) {
