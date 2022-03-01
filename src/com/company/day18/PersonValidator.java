@@ -21,11 +21,7 @@ public class PersonValidator {
         if (str == null){
             return false;
         }
-        if (str.length() != 8){
-            return false;
-        }
-
-        if (!str.substring(0, 2).equals("AN")){
+        if (str.length() != 8 && !str.substring(0, 2).equals("AN")){
             return false;
         }
 
