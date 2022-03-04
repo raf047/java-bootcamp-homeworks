@@ -5,4 +5,11 @@ public abstract class Animal {
 
     protected abstract void voice();
 
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
 }
