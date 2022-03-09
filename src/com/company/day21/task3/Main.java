@@ -2,14 +2,14 @@ package com.company.day21.task3;
 
 public class Main {
     public static void main(String[] args) {
-        Animal animal = new Animal(4, "animal") {
+        Animal animal = new Animal(47, "animal") {
             @Override
             public void sound() {
                 System.out.println("Anonymous voice");
             }
         };
 
-        Animal animalCat = new Cat(47, "Murka");
+        Animal animalCat = new Cat(4, "Murka");
         Cat cat = new Cat(7, "Barsik");
 
         System.out.println(animal.getAge() + " , " + animal.getName());
