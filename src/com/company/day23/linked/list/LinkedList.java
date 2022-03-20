@@ -1,10 +1,10 @@
-package com.company.day23;
+package com.company.day23.linked.list;
 
-import org.w3c.dom.Node;
+import com.company.day23.List;
 
 import java.util.Iterator;
 
-public class LinkedList implements List , Iterable<Integer> {
+public class LinkedList implements List, Iterable<Integer> {
 
     private int size;
     private Node head;
