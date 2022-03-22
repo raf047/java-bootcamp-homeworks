@@ -1,11 +1,9 @@
 package com.company.day23.array.list;
 
-import com.company.day23.List;
-
 import java.util.Arrays;
 import java.util.Iterator;
 
-public class MyArrayList implements List, Iterable<Integer> {
+public class MyArrayList implements List {
     private int capacity = 10;
     private int size;
     private int[] arr = new int[this.capacity];
@@ -18,6 +16,7 @@ public class MyArrayList implements List, Iterable<Integer> {
             throw new IllegalArgumentException();
         } else {
             this.capacity = capacity;
+            this.arr = new int[capacity];
         }
     }
 
@@ -44,7 +43,7 @@ public class MyArrayList implements List, Iterable<Integer> {
 
     @Override
     public boolean isEmpty() {
-        return this.size != 0;
+        return this.size == 0;
     }
 
     @Override
