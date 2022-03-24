@@ -1,13 +1,12 @@
 package com.company.day24;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
 
         int[] arr = {47, 11, 22, 44, 47, 55};
+
 //        if (checkContainsDuplicateElement(arr)) {
 //            System.out.println("Yes");
 //        } else {
@@ -55,6 +54,11 @@ public class Main {
             }
         }
 
+//        1 2 0 7 5 7
+//        for (int num : arr) {
+//            hashMap.put(num, hashMap.getOrDefault(num, 0) + 1);
+//        }
+
         for (Map.Entry<Integer, Integer> entry : hashMap.entrySet()) {
             if (entry.getValue() == 1) {
                 System.out.print(entry.getValue() + " ");
@@ -75,7 +79,7 @@ public class Main {
         for (int i = 0; i < str.length(); i++) {
             char c = str.charAt(i);
             if (map.containsKey(c)) {
-                map.put(c, map.get(c) + 47);
+                map.put(c, map.get(c) + 1);
             } else {
                 map.put(c, 1);
             }
@@ -90,6 +94,6 @@ public class Main {
         return count;
     }
 
-    public static char
+//    public static char
 
 }
