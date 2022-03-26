@@ -300,7 +300,7 @@ public class Homework0323 {
 
         return addAsterisk(str.substring(0, i) + "*" + str.substring(i), i + 2);
     }
-    
+
     /**
      * 15. Add opening and closing parentheses
      * @param str
